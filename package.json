@@ -1,0 +1,15 @@
+{
+  "name": "string-calculator_tdd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "string-calculator.js",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

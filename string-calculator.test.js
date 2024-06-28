@@ -23,3 +23,8 @@ test('returns the sum of multiple comma-separated numbers', () => {
     expect(add("10,20,30")).toBe(60);
 });
 
+//Case5 - handle new lines
+test('returns the sum of numbers separated by commas and new lines', () => {
+    expect(add("1\n2,3")).toBe(6);
+    expect(add("10\n20\n30")).toBe(60);
+});

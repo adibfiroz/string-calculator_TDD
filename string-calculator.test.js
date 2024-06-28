@@ -16,3 +16,10 @@ test('returns the sum of two comma-separated numbers', () => {
     expect(add("1,2")).toBe(3);
     expect(add("100,5")).toBe(105);
 });
+
+//Case4 - Multiple Numbers
+test('returns the sum of multiple comma-separated numbers', () => {
+    expect(add("1,2,3,4")).toBe(10);
+    expect(add("10,20,30")).toBe(60);
+});
+

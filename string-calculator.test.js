@@ -35,3 +35,9 @@ test('returns the sum of numbers separated by a custom delimiter', () => {
     expect(add("//|\n10|20|30")).toBe(60);
     expect(add("//***\n1***2***3")).toBe(6); 
 });
+
+//Case7 - Handle Negative Numbers
+test('negative numbers not allowed', () => {
+    expect(() => add("1,-2,3")).toThrow("negative numbers not allowed: -2");
+    expect(() => add("//;\n1;-2;3;-4")).toThrow("negative numbers not allowed: -2,-4");
+});
